@@ -59,5 +59,8 @@ module.exports = {
       description: 'pipeline'
     }
   ],
-  run: cli.command(co.wrap(run))
+  run: cli.command(co.wrap(run)),
+  help: `Example:
+
+    $ heroku ci:rerun 985 --app murmuring-headland-14719`
 }
