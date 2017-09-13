@@ -5,7 +5,7 @@ const Utils = require('../../lib/utils')
 
 function validateArgs (args) {
   if (args.length === 0) {
-    cli.exit(1, 'Usage: heroku ci:config:set KEY1 [KEY2 ...]\nMust specify KEY to unset.')
+    cli.exit(1, 'Usage: heroku ci:config:unset KEY1 [KEY2 ...]\nMust specify KEY to unset.')
   }
 }
 
@@ -42,7 +42,7 @@ module.exports = {
   ],
   help: `Examples:
 
-    $ heroku ci:config:uset RAILS_ENV
+    $ heroku ci:config:unset RAILS_ENV
     Unsetting RAILS_ENV... done
 `,
   run: cli.command(co.wrap(run))

@@ -58,7 +58,7 @@ module.exports = {
   help: `Examples:
 
     $ heroku ci:config:set RAILS_ENV=test
-    Setting test config vars... done
+    Setting RAILS_ENV... done
 
     RAILS_ENV: test
 `,
